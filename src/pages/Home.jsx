@@ -352,7 +352,7 @@ const Home = () => {
 
 
 {/* SECÇÃO 5: HISTÓRIAS DE CLIENTES - FIEL À IMAGEM */}
-<section id="contact" className="py-20 px-6 md:px-20 min-h-[85vh] flex flex-col items-center justify-center bg-gradient-to-br from-[#fcc2ab] via-[#a6c1ee] to-[#6d94df]">
+<section className="py-20 px-6 md:px-20 min-h-[85vh] flex flex-col items-center justify-center bg-gradient-to-br from-[#fcc2ab] via-[#a6c1ee] to-[#6d94df]">
   
   {/* Cabeçalho Compacto */}
   <div className="text-center mb-10">
