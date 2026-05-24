@@ -844,7 +844,8 @@ const Home = () => {
         Escritório
       </h3>
       <p className="text-black/70 text-[13px] leading-snug mb-5 max-w-[260px]" style={{ fontFamily: 'var(--font-worksans)' }}>
-        Visite nossa sede — clique no link abaixo
+        Visite nossa sede<br></br>
+        (clique no link abaixo)
       </p>
      <a 
   href="https://maps.google.com/?cid=12783176811415827790&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" 
