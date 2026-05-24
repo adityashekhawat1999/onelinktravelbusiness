@@ -467,7 +467,7 @@ const Home = () => {
     
     {/* Main title in one line */}
     <h2 
-      className="text-3xl md:text-[52px] font-medium text-black mb-6 tracking-tight whitespace-nowrap" 
+      className="text-3xl md:text-[52px] font-medium text-black mb-6 tracking-tight text-center leading-tight" 
       style={{ fontFamily: 'var(--font-manrope)' }}
     >
       O seu parceiro de confiança em vistos
