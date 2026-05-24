@@ -217,15 +217,13 @@ const Home = () => {
     {[
       { 
         title: "Visto de Trabalho", 
-        desc: "Conectamos candidatos a oportunidades internacionais através de contratos de trabalho fornecidos por empresas parceiras.
-", 
+        desc: "Conectamos candidatos a oportunidades internacionais através de contratos de trabalho fornecidos por empresas parceiras.", 
         more: "Prestamos suporte completo com contratos de trabalho, documentação, preparação consular e acompanhamento durante todo o processo.",
         img: "/service-work.jpg" 
       },
       { 
         title: "Visto de Turismo", 
-        desc: "Facilitamos o processo do visto de turismo com orientação segura e acompanhamento personalizado.
-", 
+        desc: "Facilitamos o processo do visto de turismo com orientação segura e acompanhamento personalizado.", 
         more: "Auxiliamos na preparação dos documentos, formulários e organização do processo para maior segurança na solicitação do visto.",
         img: "/service-tourist.jpg" 
       },
