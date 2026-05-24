@@ -217,20 +217,22 @@ const Home = () => {
     {[
       { 
         title: "Visto de Trabalho", 
-        desc: "Priorizamos uma comunicação clara e apoio contínuo na sua jornada profissional.", 
-        more: "Tratamos de certificações laborais e entrevistas consulares para uma transição sem falhas.",
+        desc: "Conectamos candidatos a oportunidades internacionais através de contratos de trabalho fornecidos por empresas parceiras.
+", 
+        more: "Prestamos suporte completo com contratos de trabalho, documentação, preparação consular e acompanhamento durante todo o processo.",
         img: "/service-work.jpg" 
       },
       { 
         title: "Visto de Turismo", 
-        desc: "Minimize a burocracia e maximize as suas chances de aprovação com sucesso.", 
-        more: "Desde o planeamento do itinerário até ao processamento rápido da candidatura.",
+        desc: "Facilitamos o processo do visto de turismo com orientação segura e acompanhamento personalizado.
+", 
+        more: "Auxiliamos na preparação dos documentos, formulários e organização do processo para maior segurança na solicitação do visto.",
         img: "/service-tourist.jpg" 
       },
       { 
         title: "Visto de Estudante", 
-        desc: "Navegue por requisitos internacionais complexos com total confiança.", 
-        more: "Auxiliamos com comprovativos de matrícula e documentação financeira necessária.",
+        desc: "Apoiamos estudantes na conquista de oportunidades académicas internacionais com acompanhamento especializado.", 
+        more: "Oferecemos suporte em bolsas de estudo, admissões universitárias, documentação financeira e processos de visto.",
         img: "/service-student.jpg" 
       }
     ].map((service, i) => {
