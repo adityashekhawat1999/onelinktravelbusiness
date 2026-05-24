@@ -394,7 +394,7 @@ const Home = () => {
         role: "Estudante",
         uni: "Universidade de Mineração de São Petersburgo",
         loc: "Rússia",
-        content: "Orientação especializada tornou meu visto americano simples e seguro.",
+        content: "Orientação especializada tornou meu visto russo simples e seguro.",
         img: "/client-3.jpg"
       }
     ].map((client, index) => (
