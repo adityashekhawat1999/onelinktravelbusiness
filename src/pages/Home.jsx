@@ -602,7 +602,7 @@ const Home = () => {
           className="text-[16px] font-bold tracking-[0.1em] uppercase text-gray-900" 
           style={{ fontFamily: 'var(--font-manrope)' }}
         >
-          LEONARDO
+          LEONARDO EDUARDO
         </h3>
         <p 
           className="text-[10px] font-semibold text-gray-500 mt-1 tracking-widest uppercase"
@@ -632,7 +632,7 @@ const Home = () => {
           className="text-[16px] font-bold tracking-[0.1em] uppercase text-gray-900" 
           style={{ fontFamily: 'var(--font-manrope)' }}
         >
-          BERNARDO
+          BERNARDO ADÃO
         </h3>
         <p 
           className="text-[10px] font-semibold text-gray-500 mt-1 tracking-widest uppercase"
