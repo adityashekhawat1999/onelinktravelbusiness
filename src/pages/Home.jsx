@@ -171,7 +171,7 @@ const Home = () => {
 
 
 {/* SECÇÃO 3: SERVIÇOS - DESIGN FIEL AO SCREENSHOT COM SUA LÓGICA MANTIDA */}
-<section className="py-12 px-6 md:px-20 bg-gradient-to-br from-[#f8c1cc] via-[#b4c6ef] to-[#7195e0] min-h-screen flex flex-col justify-center overflow-hidden">
+<section id="services" className="py-12 px-6 md:px-20 bg-gradient-to-br from-[#f8c1cc] via-[#b4c6ef] to-[#7195e0] min-h-screen flex flex-col justify-center overflow-hidden">
   
   {/* Cabeçalho Idêntico à Imagem */}
   <div className="text-center mb-12">
