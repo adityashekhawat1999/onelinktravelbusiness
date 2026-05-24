@@ -33,7 +33,7 @@ const Navbar = () => {
       >
         <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="hover:text-blue-600 transition-colors">Início</a>
         <a href="#services" onClick={(e) => scrollToSection(e, 'services')} className="hover:text-blue-600 transition-colors">Serviços</a>
-        <a href="#visas" onClick={(e) => scrollToSection(e, 'services')} className="hover:text-blue-600 transition-colors">Vistos</a>
+        <a href="#visas" onClick={(e) => scrollToSection(e, 'countries')} className="hover:text-blue-600 transition-colors">Vistos</a>
         <div 
           onClick={(e) => scrollToSection(e, 'team')} 
           className="flex items-center gap-1.5 cursor-pointer hover:text-blue-600 transition-colors group"
