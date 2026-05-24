@@ -534,7 +534,7 @@ const Home = () => {
   {/* CTA Buttons with onClick Handlers */}
   <div className="flex items-center justify-center gap-8">
     <button 
-      onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+      onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
       className="bg-white/90 backdrop-blur-sm text-black px-10 py-3 rounded-full font-bold text-sm hover:bg-white transition-all shadow-sm border border-black/10 active:scale-95"
       style={{ fontFamily: 'var(--font-worksans)' }}
     >
