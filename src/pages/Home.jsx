@@ -102,7 +102,7 @@ const Home = () => {
 
 
 {/* 2. SECÇÃO DE PAÍSES - VERSÃO PEQUENA E ESTILIZADA */}
-<section className="py-12 px-6 md:px-20 bg-gradient-to-br from-[#f8c1cc] via-[#b4c6ef] to-[#7195e0] min-h-screen flex flex-col justify-center overflow-hidden">
+<section id ="countries" className="py-12 px-6 md:px-20 bg-gradient-to-br from-[#f8c1cc] via-[#b4c6ef] to-[#7195e0] min-h-screen flex flex-col justify-center overflow-hidden">
   
   <div className="text-center mb-10 relative z-10">
     <p 
