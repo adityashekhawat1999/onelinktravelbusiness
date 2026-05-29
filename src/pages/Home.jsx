@@ -263,7 +263,7 @@ const Home = () => {
   <p
     className="
       text-[10px]
-      text-blue-600
+      text-black
       text-center
       font-medium
       opacity-75
