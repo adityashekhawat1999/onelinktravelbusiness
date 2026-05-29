@@ -1102,6 +1102,7 @@ const Home = () => {
     </a>
 
   </div>
+        </div>
 </div>
 
     {/* Image Side - Rounded with specific frame style */}
