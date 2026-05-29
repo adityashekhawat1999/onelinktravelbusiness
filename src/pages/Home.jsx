@@ -248,7 +248,7 @@ const Home = () => {
           >
             {country.name}
           </h3>
-        </a>
+        </div>
 
         {/* Linha Tracejada Fina */}
         <div className="w-[75%] border-t-[1px] border-dashed border-gray-300 opacity-60 my-1"></div>
@@ -263,7 +263,7 @@ const Home = () => {
         <p className="text-[10px] text-blue-600 mt-3 opacity-0 group-hover:opacity-100 transition-all">
   Ver requisitos →
 </p>
-      </div>
+      </a>
     ))}
   </div>
 </section>
