@@ -121,18 +121,26 @@ const Home = () => {
   </div>
 
   {/* Grid ultra-compacta */}
-  <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-6 relative z-10">
+  <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 relative z-10">
     {[
       { name: "PORTUGAL", desc: "Residência e trabalho na Europa", img: "/portugal.jpg" },
-      { name: "ALEMANHA", desc: "Grandes oportunidades profissionais seguras", img: "/germany.jpg" },
-      { name: "POLÓNIA", desc: "Mercado em crescimento na Europa", img: "/poland.jpg" },
-      { name: "REPÚBLICA CHECA", desc: "Qualidade de vida e estabilidade", img: "/czech.jpg" },
-      { name: "GEÓRGIA", desc: "Processos simples e rápidos", img: "/georgia.jpg" },
-      { name: "TURQUIA", desc: "Oportunidades estratégicas de residência", img: "/turkey.jpg" },
+  { name: "ALEMANHA", desc: "Grandes oportunidades profissionais seguras", img: "/germany.jpg" },
+  { name: "POLÓNIA", desc: "Mercado em crescimento na Europa", img: "/poland.jpg" },
+  { name: "REPÚBLICA CHECA", desc: "Qualidade de vida e estabilidade", img: "/czech.jpg" },
+  { name: "GEÓRGIA", desc: "Processos simples e rápidos", img: "/georgia.jpg" },
+  { name: "TURQUIA", desc: "Oportunidades estratégicas de residência", img: "/turkey.jpg" },
+
+  { name: "ROMÉNIA", desc: "Boas oportunidades de trabalho e residência", img: "/romania.jpg" },
+  { name: "SÉRVIA", desc: "Mercado acessível e em desenvolvimento", img: "/serbia.jpg" },
+  { name: "HUNGRIA", desc: "Excelentes oportunidades académicas", img: "/hungary.jpg" },
+  { name: "LITUÂNIA", desc: "Crescimento profissional na Europa", img: "/lithuania.jpg" },
+  { name: "MONTENEGRO", desc: "Processos simples e ambiente acolhedor", img: "/montenegro.jpg" },
+  { name: "ESLOVÁQUIA", desc: "Estabilidade e oportunidades internacionais", img: "/slovakia.jpg" },
+  { name: "HOLANDA", desc: "Qualidade de vida e oportunidades modernas", img: "/netherlands.jpg" },
     ].map((country, index) => (
       <div 
         key={index} 
-        className="bg-white/95 backdrop-blur-sm rounded-[35px] border border-white/40 shadow-sm flex flex-col items-center justify-center transition-all hover:shadow-md mx-auto w-full h-[180px] max-w-[260px]"
+        className="bg-white/95 backdrop-blur-sm rounded-[35px] border border-white/40 shadow-sm flex flex-col items-center justify-center transition-all hover:shadow-md mx-auto w-full h-[160px] max-w-[220px]"
       >
         {/* Header Compacto */}
         <div className="flex items-center justify-center gap-3 w-full mb-3 px-4">
