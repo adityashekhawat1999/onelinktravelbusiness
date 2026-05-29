@@ -273,7 +273,7 @@ const Home = () => {
     "
     style={{ fontFamily: 'var(--font-worksans)' }}
   >
-    Clique para ver mais requisitos →
+    Clique para ver os requisitos →
   </p>
 </div>
       </a>
