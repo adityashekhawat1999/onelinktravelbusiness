@@ -22,11 +22,11 @@ const Home = () => {
 
     // Replace the strings below with the keys from your EmailJS dashboard
     emailjs.sendForm(
-      'service_a3k37vj', 
-      'template_6wcawc7', 
-      form.current, 
-      'M05Hd2zl43sBbpz_m'
-    )
+  'service_k92qz8l',
+  'template_pgwxjir',
+  form.current,
+  'RQvWc_EmOHHKH1E8E'
+)
     .then((result) => {
         setShowPopup(true); // Shows the green success message
         form.current.reset(); // Clears the form fields
