@@ -127,7 +127,6 @@ const Home = () => {
   { name: "ALEMANHA", desc: "Grandes oportunidades profissionais seguras", img: "/germany.jpg" },
   { name: "POLÓNIA", desc: "Mercado em crescimento na Europa", img: "/poland.jpg" },
   { name: "REPÚBLICA CHECA", desc: "Qualidade de vida e estabilidade", img: "/czech.jpg" },
-  { name: "GEÓRGIA", desc: "Processos simples e rápidos", img: "/georgia.jpg" },
   { name: "TURQUIA", desc: "Oportunidades estratégicas de residência", img: "/turkey.jpg" },
 
   { name: "ROMÉNIA", desc: "Boas oportunidades de trabalho e residência", img: "/romania.jpg" },
