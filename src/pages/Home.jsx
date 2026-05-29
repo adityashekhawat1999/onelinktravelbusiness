@@ -1042,12 +1042,67 @@ const Home = () => {
 
       {/* Footer Text from Screenshot */}
       <div className="mt-12">
-        <p className="text-[13px] md:text-[14px] text-black/80 font-medium leading-relaxed">
-          Também pode entrar em contacto connosco através do <br className="hidden md:block" />
-          <span className="font-bold text-black">+244 922 475 109</span>
-        </p>
-      </div>
-    </div>
+  <p className="text-[13px] md:text-[14px] text-black/80 font-medium leading-relaxed">
+    Também pode entrar em contacto connosco através do <br className="hidden md:block" />
+    <span className="font-bold text-black">+244 922 475 109</span>
+  </p>
+
+  <div className="flex items-center gap-5 mt-5">
+    
+    <a
+      href="https://www.instagram.com/cbest_onelinktravel/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-110 transition-all duration-300"
+    >
+      <img
+        src="/instagram.svg"
+        alt="Instagram"
+        className="w-7 h-7 opacity-80 hover:opacity-100"
+      />
+    </a>
+
+    <a
+      href="https://www.youtube.com/@cbest_onelinktravel"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-110 transition-all duration-300"
+    >
+      <img
+        src="/youtube.svg"
+        alt="YouTube"
+        className="w-7 h-7 opacity-80 hover:opacity-100"
+      />
+    </a>
+
+    <a
+      href="https://www.facebook.com/profile.php?id=61579546714192"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-110 transition-all duration-300"
+    >
+      <img
+        src="/facebook.svg"
+        alt="Facebook"
+        className="w-7 h-7 opacity-80 hover:opacity-100"
+      />
+    </a>
+
+    <a
+      href="https://www.tiktok.com/@cbest_onelinktravel"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-110 transition-all duration-300"
+    >
+      <img
+        src="/tiktok.svg"
+        alt="TikTok"
+        className="w-7 h-7 opacity-80 hover:opacity-100"
+      />
+    </a>
+
+  </div>
+</div>
 
     {/* Image Side - Rounded with specific frame style */}
     <div className="order-1 lg:order-2 w-full flex justify-center lg:justify-end">
