@@ -123,24 +123,116 @@ const Home = () => {
   {/* Grid ultra-compacta */}
   <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 relative z-10">
     {[
-      { name: "PORTUGAL", desc: "Residência e trabalho na Europa", img: "/portugal.jpg" },
-  { name: "ALEMANHA", desc: "Grandes oportunidades profissionais seguras", img: "/germany.jpg" },
-  { name: "POLÓNIA", desc: "Mercado em crescimento na Europa", img: "/poland.jpg" },
-  { name: "REPÚBLICA CHECA", desc: "Qualidade de vida e estabilidade", img: "/czech.jpg" },
-  { name: "TURQUIA", desc: "Oportunidades estratégicas de residência", img: "/turkey.jpg" },
+      {
+    name: "PORTUGAL",
+    desc: "Residência e trabalho na Europa",
+    img: "/portugal.jpg",
+    pdf: "/portugalDoc.pdf"
+  },
 
-  { name: "ROMÉNIA", desc: "Boas oportunidades de trabalho e residência", img: "/romania.jpg" },
-  { name: "SÉRVIA", desc: "Mercado acessível e em desenvolvimento", img: "/serbia.jpg" },
-  { name: "HUNGRIA", desc: "Excelentes oportunidades académicas", img: "/hungary.jpg" },
-  { name: "LITUÂNIA", desc: "Crescimento profissional na Europa", img: "/lithuania.jpg" },
-  { name: "MONTENEGRO", desc: "Processos simples e ambiente acolhedor", img: "/montenegro.jpg" },
-  { name: "ESLOVÁQUIA", desc: "Estabilidade e oportunidades internacionais", img: "/slovakia.jpg" },
-  { name: "HOLANDA", desc: "Qualidade de vida e oportunidades modernas", img: "/netherlands.jpg" },
+  {
+    name: "ALEMANHA",
+    desc: "Grandes oportunidades profissionais seguras",
+    img: "/germany.jpg",
+    pdf: "/germanyDoc.pdf"
+  },
+
+  {
+    name: "POLÓNIA",
+    desc: "Mercado em crescimento na Europa",
+    img: "/poland.jpg",
+    pdf: "/polandDoc.pdf"
+  },
+
+  {
+    name: "REPÚBLICA CHECA",
+    desc: "Qualidade de vida e estabilidade",
+    img: "/czech.jpg",
+    pdf: "/czechRepublicDoc.pdf"
+  },
+
+  {
+    name: "TURQUIA",
+    desc: "Oportunidades estratégicas de residência",
+    img: "/turkey.jpg",
+    pdf: "/turkeyDoc.pdf"
+  },
+
+  {
+    name: "ROMÉNIA",
+    desc: "Boas oportunidades de trabalho e residência",
+    img: "/romania.jpg",
+    pdf: "/romaniaDoc.pdf"
+  },
+
+  {
+    name: "SÉRVIA",
+    desc: "Mercado acessível e em desenvolvimento",
+    img: "/serbia.jpg",
+    pdf: "/serbiaDoc.pdf"
+  },
+
+  {
+    name: "HUNGRIA",
+    desc: "Excelentes oportunidades académicas",
+    img: "/hungary.jpg",
+    pdf: "/hungaryDoc.pdf"
+  },
+
+  {
+    name: "LITUÂNIA",
+    desc: "Crescimento profissional na Europa",
+    img: "/lithuania.jpg",
+    pdf: "/lithuaniaDoc.pdf"
+  },
+
+  {
+    name: "MONTENEGRO",
+    desc: "Processos simples e ambiente acolhedor",
+    img: "/montenegro.jpg",
+    pdf: "/montenegroDoc.pdf"
+  },
+
+  {
+    name: "ESLOVÁQUIA",
+    desc: "Estabilidade e oportunidades internacionais",
+    img: "/slovakia.jpg",
+    pdf: "/slovakiaDoc.pdf"
+  },
+
+  {
+    name: "HOLANDA",
+    desc: "Qualidade de vida e oportunidades modernas",
+    img: "/netherlands.jpg",
+    pdf: "/netherlandsDoc.pdf"
+  },
     ].map((country, index) => (
-      <div 
-        key={index} 
-        className="bg-white/95 backdrop-blur-sm rounded-[35px] border border-white/40 shadow-sm flex flex-col items-center justify-center transition-all hover:shadow-md mx-auto w-full h-[160px] max-w-[220px]"
-      >
+      <a
+  key={index}
+  href={country.pdf}
+  download
+  className="
+    bg-white/95
+    backdrop-blur-sm
+    rounded-[35px]
+    border border-white/40
+    shadow-sm
+    flex flex-col
+    items-center
+    justify-center
+    transition-all
+    duration-300
+    hover:scale-105
+    hover:shadow-xl
+    hover:bg-white
+    cursor-pointer
+    mx-auto
+    w-full
+    h-[180px]
+    max-w-[260px]
+    group
+  "
+>
         {/* Header Compacto */}
         <div className="flex items-center justify-center gap-3 w-full mb-3 px-4">
           <div className="w-10 h-10 overflow-hidden rounded-full shadow-inner border border-gray-100 flex-shrink-0">
@@ -156,7 +248,7 @@ const Home = () => {
           >
             {country.name}
           </h3>
-        </div>
+        </a>
 
         {/* Linha Tracejada Fina */}
         <div className="w-[75%] border-t-[1px] border-dashed border-gray-300 opacity-60 my-1"></div>
@@ -168,6 +260,9 @@ const Home = () => {
         >
           {country.desc}
         </p>
+        <p className="text-[10px] text-blue-600 mt-3 opacity-0 group-hover:opacity-100 transition-all">
+  Ver requisitos →
+</p>
       </div>
     ))}
   </div>
