@@ -259,9 +259,23 @@ const Home = () => {
         >
           {country.desc}
         </p>
-        <p className="text-[10px] text-blue-600 mt-3 opacity-0 group-hover:opacity-100 transition-all">
-  Ver requisitos →
-</p>
+       <div className="mt-4 pt-3 border-t border-gray-200 w-[75%]">
+  <p
+    className="
+      text-[10px]
+      text-blue-600
+      text-center
+      font-medium
+      opacity-75
+      group-hover:opacity-100
+      transition-all
+      duration-300
+    "
+    style={{ fontFamily: 'var(--font-worksans)' }}
+  >
+    Clique para ver mais requisitos →
+  </p>
+</div>
       </a>
     ))}
   </div>
