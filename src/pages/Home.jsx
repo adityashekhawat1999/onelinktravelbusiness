@@ -925,7 +925,7 @@ const Home = () => {
         className="text-[11px] font-medium border-b border-black pb-0.5 tracking-tight hover:opacity-60 transition-all"
         style={{ fontFamily: 'var(--font-worksans)' }}
       >
-        onelinkholding.geral@gmail.com
+        geral@onelinkholding.com
       </a>
     </div>
 
