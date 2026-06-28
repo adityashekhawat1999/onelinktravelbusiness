@@ -1063,7 +1063,7 @@ const Home = () => {
   <div className="flex items-center gap-5 mt-5">
     
     <a
-      href="https://www.instagram.com/cbest_onelinktravel/"
+      href="https://www.instagram.com/cbest__onelinktravel"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:scale-110 transition-all duration-300"
