@@ -2,12 +2,18 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
+import Maintenance from './pages/Maintenance';
+
+const maintenanceMode = true; // Change to false when you're ready
 
 function App() {
+  if (maintenanceMode) {
+    return <Maintenance />;
+  }
+
   return (
     <Router>
       <Routes>
-        {/* The Layout wraps the home page sections */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
         </Route>
