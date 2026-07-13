@@ -4,7 +4,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Maintenance from './pages/Maintenance';
 
-const maintenanceMode = true; // Change to false when you're ready
+const maintenanceMode = false; // Change to false when you're ready
 
 function App() {
   if (maintenanceMode) {
