@@ -5,6 +5,7 @@ import CBEST from './pages/CBEST';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LanguageSelector from './components/LanguageSelector';
+import WhatsAppButton from './components/WhatsAppButton';
 import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
+          <WhatsAppButton />
         </div>
       </BrowserRouter>
     </LanguageProvider>
