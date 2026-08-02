@@ -467,10 +467,10 @@ const Home = () => {
               {/* Subtle glassmorphism overlay on hover */}
               <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 backdrop-blur-[2px] z-10"></div>
 
-              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-20 flex flex-col justify-end h-full">
-                <div className="w-12 h-[3px] bg-[#a5c2ff] mb-6 transform origin-left group-hover:scale-x-150 transition-transform duration-700"></div>
-                <h3 className="text-4xl md:text-5xl font-extrabold text-white font-manrope mb-2 tracking-tight drop-shadow-xl group-hover:-translate-y-2 transition-transform duration-700">Leonardo Eduardo</h3>
-                <p className="text-[#a5c2ff] font-bold text-xs tracking-[0.3em] uppercase mb-6 group-hover:-translate-y-2 transition-transform duration-700">{t('home.ceoRole')}</p>
+              <div className="absolute bottom-0 left-0 right-0 p-5 pb-6 md:p-12 z-20 flex flex-col justify-end h-full">
+                <div className="w-12 h-[3px] bg-[#a5c2ff] mb-4 md:mb-6 transform origin-left group-hover:scale-x-150 transition-transform duration-700"></div>
+                <h3 className="text-3xl md:text-5xl font-extrabold text-white font-manrope mb-1 md:mb-2 tracking-tight drop-shadow-xl group-hover:-translate-y-2 transition-transform duration-700">Leonardo Eduardo</h3>
+                <p className="text-[#a5c2ff] font-bold text-[10px] md:text-xs tracking-[0.3em] uppercase mb-2 md:mb-6 group-hover:-translate-y-2 transition-transform duration-700">{t('home.ceoRole')}</p>
                 <div className="overflow-hidden">
                   <p className="text-slate-300 text-sm md:text-base leading-relaxed font-light transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out">
                     {t('home.ceoDesc')}
@@ -498,10 +498,10 @@ const Home = () => {
               {/* Subtle glassmorphism overlay on hover */}
               <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 backdrop-blur-[2px] z-10"></div>
 
-              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-20 flex flex-col justify-end h-full">
-                <div className="w-12 h-[3px] bg-[#a5c2ff] mb-6 transform origin-left group-hover:scale-x-150 transition-transform duration-700"></div>
-                <h3 className="text-4xl md:text-5xl font-extrabold text-white font-manrope mb-2 tracking-tight drop-shadow-xl group-hover:-translate-y-2 transition-transform duration-700">Bernardo</h3>
-                <p className="text-[#a5c2ff] font-bold text-xs tracking-[0.3em] uppercase mb-6 group-hover:-translate-y-2 transition-transform duration-700">{t('home.directorRole')}</p>
+              <div className="absolute bottom-0 left-0 right-0 p-5 pb-6 md:p-12 z-20 flex flex-col justify-end h-full">
+                <div className="w-12 h-[3px] bg-[#a5c2ff] mb-4 md:mb-6 transform origin-left group-hover:scale-x-150 transition-transform duration-700"></div>
+                <h3 className="text-3xl md:text-5xl font-extrabold text-white font-manrope mb-1 md:mb-2 tracking-tight drop-shadow-xl group-hover:-translate-y-2 transition-transform duration-700">Bernardo</h3>
+                <p className="text-[#a5c2ff] font-bold text-[10px] md:text-xs tracking-[0.3em] uppercase mb-2 md:mb-6 group-hover:-translate-y-2 transition-transform duration-700">{t('home.directorRole')}</p>
                 <div className="overflow-hidden">
                   <p className="text-slate-300 text-sm md:text-base leading-relaxed font-light transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out">
                     {t('home.directorDesc')}
