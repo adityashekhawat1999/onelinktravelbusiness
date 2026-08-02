@@ -259,7 +259,7 @@ const Home = () => {
               </ul>
               
               <div className="grid grid-cols-2 gap-6">
-                <AnimatedCounter value="150" suffix="+" label={t('home.statVisas')} color="from-[#7195e0] to-[#5a7bc2]" />
+                <AnimatedCounter value="500" suffix="+" label={t('home.statVisas')} color="from-[#7195e0] to-[#5a7bc2]" />
                 <AnimatedCounter value="10" suffix="+" label={t('home.statCountries')} color="from-[#b4c6ef] to-[#8faee0]" />
               </div>
             </motion.div>
