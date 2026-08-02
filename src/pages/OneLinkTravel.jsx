@@ -559,7 +559,7 @@ const OneLinkTravel = () => {
                   </div>
 
                   {/* Unhovered View (Bottom Typography) */}
-                  <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end transform transition-transform duration-500 group-hover:translate-y-8 group-hover:opacity-0">
+                  <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end transform transition-transform duration-500 group-hover:translate-y-8 group-hover:opacity-0 pointer-events-none">
                     <div className="w-8 h-[2px] bg-[#7195e0] mb-3"></div>
                     <h3 className="text-2xl font-bold text-white font-manrope mb-1 tracking-tight">
                       {country.name}
@@ -567,6 +567,12 @@ const OneLinkTravel = () => {
                     <p className="text-slate-300 font-worksans text-sm font-light leading-relaxed">
                       {country.desc}
                     </p>
+                    {country.pdf && (
+                      <a href={country.pdf} download className="mt-4 pointer-events-auto md:hidden bg-white/20 active:bg-white/40 transition-colors text-white py-2 rounded-xl text-center text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border border-white/20 shadow-lg flex items-center justify-center gap-2">
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        {t('travel.clickMoreInfo')}
+                      </a>
+                    )}
                   </div>
 
                   {/* Hovered View (Detailed Info) */}
