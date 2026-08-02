@@ -56,8 +56,14 @@ const translations = {
       faq2a: "One Link Travel focuses exclusively on visa services (work, tourism, student) and immigration. CBEST is our specialized educational agency for placing students in international universities, managing scholarships, and academic mentoring.",
       faq3q: "Do you serve clients outside of Angola?",
       faq3a: "Yes. We have a global infrastructure and digital processes that allow us to advise clients of various nationalities, helping them reach their study and work destinations in Europe, USA, China, India and other countries.",
-      faq4q: "How can I schedule a consultation?",
-      faq4a: "You can start the process by selecting the brand best suited to your needs (One Link Travel for visas or CBEST for studies) and contacting us through the dedicated forms on the respective branch pages."
+      faq4q: "How does One Link Holding ensure the security of processes?",
+      faq4a: "We adopt strict compliance and data protection protocols, aligned with international standards. Each subsidiary has dedicated teams to ensure total transparency, legal security, and confidentiality in all interactions with clients and partners.",
+      contactBannerOpening: "Opening Hours",
+      contactBannerHours: "Mon-Fri 08:00–17:30",
+      contactBannerTitle: "Your Future is Our Mission and Passion to Support You",
+      contactBannerContact: "Contact Info",
+      faq5q: "How can I schedule a consultation?",
+      faq5a: "You can start the process by selecting the brand best suited to your needs (One Link Travel for visas or CBEST for studies) and contacting us through the dedicated forms on the respective branch pages."
     },
     travel: {
       heroTitle1: "Your gateway",
@@ -243,8 +249,14 @@ const translations = {
       faq2a: "A One Link Travel foca-se exclusivamente em serviços de vistos (trabalho, turismo, estudante) e imigração. A CBEST é a nossa consultoria educacional especializada na colocação de estudantes em universidades internacionais, gestão de bolsas de estudo e mentoria académica.",
       faq3q: "Atendem clientes de fora de Angola?",
       faq3a: "Sim. Temos uma infraestrutura global e processos digitais que nos permitem assessorar clientes de diversas nacionalidades, ajudando-os a alcançar os seus destinos de estudo e trabalho na Europa, EUA, China, Índia e outros países.",
-      faq4q: "Como posso agendar uma consultoria?",
-      faq4a: "Pode iniciar o processo selecionando a marca mais adequada às suas necessidades (One Link Travel para vistos ou CBEST para estudos) e entrar em contacto através dos formulários dedicados nas respetivas páginas das filiais."
+      faq4q: "Como é que a One Link Holding garante a segurança dos processos?",
+      faq4a: "Adotamos protocolos rigorosos de conformidade e proteção de dados, alinhados com as normas internacionais. Cada subsidiária conta com equipas dedicadas para assegurar total transparência, segurança jurídica e confidencialidade em todas as interações com clientes e parceiros.",
+      contactBannerOpening: "Horário de Funcionamento",
+      contactBannerHours: "Seg-Sex 08:00–17:30",
+      contactBannerTitle: "O Seu Futuro é a Nossa Missão e a Nossa Paixão é Apoiá-lo",
+      contactBannerContact: "Informação de Contacto",
+      faq5q: "Como posso agendar uma consultoria?",
+      faq5a: "Pode iniciar o processo selecionando a marca mais adequada às suas necessidades (One Link Travel para vistos ou CBEST para estudos) e entrar em contacto através dos formulários dedicados nas respetivas páginas das filiais."
     },
     travel: {
       heroTitle1: "A sua porta",
