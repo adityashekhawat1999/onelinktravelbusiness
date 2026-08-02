@@ -5,7 +5,7 @@ import {
   GraduationCap, BookOpen, PenTool, FileText, 
   Award, Languages, CheckSquare, Users, 
   ShieldCheck, Landmark, ArrowRight, Globe,
-  Quote, MapPin, Phone, Mail, ChevronDown
+  Quote, MapPin, Phone, Mail, ChevronDown, Clock
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -539,6 +539,42 @@ const CBEST = () => {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* 9. Contact Info Banner */}
+      <section className="bg-white py-16 px-6 md:px-20 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+          
+          {/* Opening Hours */}
+          <div className="flex flex-col items-start lg:w-1/4">
+            <h4 className="text-slate-900 font-bold mb-4">{t('home.contactBannerOpening')}</h4>
+            <div className="flex items-center text-slate-600 gap-3">
+              <Clock className="w-5 h-5 text-[#c4778a]" />
+              <span className="font-medium text-sm">{t('home.contactBannerHours')}</span>
+            </div>
+          </div>
+
+          {/* Central Message */}
+          <div className="text-center lg:w-2/4">
+            <h3 className="text-2xl md:text-3xl font-extrabold font-manrope text-slate-900 leading-tight">
+              {t('home.contactBannerTitle')}
+            </h3>
+          </div>
+
+          {/* Contact Info */}
+          <div className="flex flex-col items-start lg:items-end lg:w-1/4 gap-4">
+            <h4 className="text-slate-900 font-bold lg:self-end">{t('home.contactBannerContact')}</h4>
+            <div className="flex items-center gap-3 text-slate-600">
+              <Phone className="w-5 h-5 text-[#c4778a]" />
+              <a href="tel:+244922475109" className="font-medium text-sm hover:text-[#c4778a] transition-colors">+244 922 475 109</a>
+            </div>
+            <div className="flex items-center gap-3 text-slate-600">
+              <Mail className="w-5 h-5 text-[#c4778a]" />
+              <a href="mailto:geral@onelinkholding.com" className="font-medium text-sm hover:text-[#c4778a] transition-colors">geral@onelinkholding.com</a>
+            </div>
+          </div>
+
         </div>
       </section>
 

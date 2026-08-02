@@ -60,7 +60,7 @@ const translations = {
       faq4a: "We adopt strict compliance and data protection protocols, aligned with international standards. Each subsidiary has dedicated teams to ensure total transparency, legal security, and confidentiality in all interactions with clients and partners.",
       contactBannerOpening: "Opening Hours",
       contactBannerHours: "Mon-Fri 08:00–17:30",
-      contactBannerTitle: "Your Future is Our Mission and Passion to Support You",
+      contactBannerTitle: "Your Future is Our Mission and Passion to Support You!",
       contactBannerContact: "Contact Info",
       faq5q: "How can I schedule a consultation?",
       faq5a: "You can start the process by selecting the brand best suited to your needs (One Link Travel for visas or CBEST for studies) and contacting us through the dedicated forms on the respective branch pages."
@@ -253,7 +253,7 @@ const translations = {
       faq4a: "Adotamos protocolos rigorosos de conformidade e proteção de dados, alinhados com as normas internacionais. Cada subsidiária conta com equipas dedicadas para assegurar total transparência, segurança jurídica e confidencialidade em todas as interações com clientes e parceiros.",
       contactBannerOpening: "Horário de Funcionamento",
       contactBannerHours: "Seg-Sex 08:00–17:30",
-      contactBannerTitle: "O Seu Futuro é a Nossa Missão e a Nossa Paixão é Apoiá-lo",
+      contactBannerTitle: "O Seu Futuro é a Nossa Missão e a Nossa Paixão é Apoiá-lo!",
       contactBannerContact: "Informação de Contacto",
       faq5q: "Como posso agendar uma consultoria?",
       faq5a: "Pode iniciar o processo selecionando a marca mais adequada às suas necessidades (One Link Travel para vistos ou CBEST para estudos) e entrar em contacto através dos formulários dedicados nas respetivas páginas das filiais."
