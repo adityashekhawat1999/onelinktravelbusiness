@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --font-manrope: "Manrope", sans-serif;
+  --font-worksans: "Work Sans", sans-serif;
+}
+
+@theme {
+  --font-manrope: var(--font-manrope);
+  --font-worksans: var(--font-worksans);
+}
+
+body {
+  font-family: var(--font-worksans);
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-manrope);
+}
+
+/* Base utility for smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
