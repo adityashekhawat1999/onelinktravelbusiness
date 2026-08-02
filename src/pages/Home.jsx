@@ -340,7 +340,7 @@ const Home = () => {
               <div className="px-10 pb-10 pt-12 relative z-20 flex-grow flex flex-col justify-between bg-white rounded-t-[2.5rem] -mt-8 border-t border-white/50">
                 <div>
                   <div className="flex flex-wrap gap-2 mb-8">
-                    {[t('home.tagWorkVisas'), t('home.tagStudentVisas'), t('home.tagTourism')].map(tag => (
+                    {[t('home.tagWorkVisas'), t('home.tagStudentVisas'), t('home.tagTourism'), t('home.tagSchengenVisa')].map(tag => (
                       <span key={tag} className="px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase bg-slate-50 text-slate-600 border border-slate-200 transition-colors group-hover:border-[#7195e0]/30 group-hover:bg-[#7195e0]/5">
                         {tag}
                       </span>
