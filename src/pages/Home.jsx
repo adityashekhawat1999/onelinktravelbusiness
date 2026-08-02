@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence, useInView, animate, useScroll, useTransform } from 'framer-motion';
 import { 
   ArrowRight,
@@ -151,6 +151,7 @@ const globalPartners = [
 
 const Home = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { t } = useLanguage();
   
   useEffect(() => {
@@ -311,7 +312,8 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-10 lg:gap-14">
             {/* One Link Travel Feature */}
             <motion.div 
-              className="group relative rounded-[2.5rem] overflow-hidden bg-white border border-slate-200/60 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_-15px_rgba(113,149,224,0.2)] transition-all duration-700 hover:-translate-y-2 flex flex-col"
+              onClick={() => navigate('/onelinktravel')}
+              className="group relative rounded-[2.5rem] overflow-hidden bg-white border border-slate-200/60 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_-15px_rgba(113,149,224,0.2)] transition-all duration-700 hover:-translate-y-2 flex flex-col cursor-pointer"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -368,7 +370,8 @@ const Home = () => {
 
             {/* CBEST Feature */}
             <motion.div 
-              className="group relative rounded-[2.5rem] overflow-hidden bg-white border border-slate-200/60 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_-15px_rgba(232,156,174,0.2)] transition-all duration-700 hover:-translate-y-2 flex flex-col"
+              onClick={() => navigate('/cbest')}
+              className="group relative rounded-[2.5rem] overflow-hidden bg-white border border-slate-200/60 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_-15px_rgba(232,156,174,0.2)] transition-all duration-700 hover:-translate-y-2 flex flex-col cursor-pointer"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

@@ -487,14 +487,14 @@ const OneLinkTravel = () => {
         </div>
 
         {/* Content Layer */}
-        <div className="relative z-10 w-full px-6 md:px-12 lg:px-12 max-w-7xl mx-auto flex flex-col justify-center">
+        <div className="relative z-10 w-full px-4 md:px-12 lg:px-12 max-w-7xl mx-auto flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-3xl"
           >
-            <h1 className="text-[3.5rem] sm:text-[4rem] md:text-[5rem] font-medium text-[#2c3e66] leading-[1.05] tracking-tight mb-8 font-manrope max-w-[90%] md:max-w-lg lg:max-w-2xl">
+            <h1 className="text-[3rem] sm:text-[3.5rem] md:text-[5rem] font-medium text-[#2c3e66] leading-[1.05] tracking-tight mb-8 font-manrope w-full md:max-w-lg lg:max-w-2xl -ml-1 md:ml-0">
               {t('travel.heroTitle1')} <br />
               {t('travel.heroTitle2')} <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#e89cae] to-[#7195e0]">

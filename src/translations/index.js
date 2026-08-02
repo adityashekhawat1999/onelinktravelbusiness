@@ -350,7 +350,7 @@ const translations = {
       uniOrScholarship: "Admissão Universitária ou Bolsa de Estudo?",
       partOrFull: "Bolsa Parcial ou Totalmente?",
       guaranteedOrSelection: "Bolsa Garantida ou Bolsa baseada em Processo Selectivo?",
-      whatsapp: "Número de WhatsApp",
+      whatsapp: "Número do WhatsApp",
       age: "Idade",
       howHelp: "Como podemos ajudar",
       terms: "Concordo com os termos",
