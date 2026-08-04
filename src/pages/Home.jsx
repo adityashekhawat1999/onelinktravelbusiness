@@ -14,11 +14,12 @@ import {
   Plane,
   GraduationCap,
   ChevronRight,
-  Play,
-  Quote,
-  Clock,
   Phone,
-  Mail
+  Mail,
+  Users,
+  CheckCircle,
+  Activity,
+  Clock
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -290,6 +291,145 @@ const Home = () => {
         </div>
       </section>
 
+      {/* 2.5 Trusted by Thousands Across Our Community */}
+      <section className="py-24 bg-[#f4f7fc] relative overflow-hidden border-t border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-extrabold font-manrope text-slate-900 mb-6 tracking-tight">
+              {t('home.trustTitle')}
+            </h2>
+            <p className="text-lg md:text-xl text-slate-500 max-w-3xl mx-auto font-light leading-relaxed">
+              {t('home.trustSubtitle')}
+            </p>
+          </motion.div>
+
+          {/* Social Stats Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-24">
+            {/* FB */}
+            <motion.div className="bg-white border border-slate-200 shadow-sm rounded-3xl p-6 text-center hover:shadow-md transition-shadow group" initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay: 0.1}}>
+              <svg className="w-8 h-8 text-[#7195e0] mx-auto mb-4 group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+              <div className="text-2xl font-bold text-slate-900 mb-1">{t('home.trustFollowersFB')}</div>
+              <div className="text-xs text-slate-500 uppercase tracking-wider">Facebook</div>
+            </motion.div>
+            {/* IG */}
+            <motion.div className="bg-white border border-slate-200 shadow-sm rounded-3xl p-6 text-center hover:shadow-md transition-shadow group" initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay: 0.2}}>
+              <svg className="w-8 h-8 text-[#7195e0] mx-auto mb-4 group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              <div className="text-2xl font-bold text-slate-900 mb-1">{t('home.trustFollowersIG')}</div>
+              <div className="text-xs text-slate-500 uppercase tracking-wider">Instagram</div>
+            </motion.div>
+            {/* TikTok */}
+            <motion.div className="bg-white border border-slate-200 shadow-sm rounded-3xl p-6 text-center hover:shadow-md transition-shadow group" initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay: 0.3}}>
+              <svg className="w-8 h-8 text-[#7195e0] mx-auto mb-4 group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+              <div className="text-2xl font-bold text-slate-900 mb-1">{t('home.trustFollowersTikTok')}</div>
+              <div className="text-xs text-slate-500 uppercase tracking-wider">TikTok</div>
+            </motion.div>
+            {/* YouTube */}
+            <motion.div className="bg-white border border-slate-200 shadow-sm rounded-3xl p-6 text-center hover:shadow-md transition-shadow group" initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay: 0.4}}>
+              <svg className="w-8 h-8 text-[#7195e0] mx-auto mb-4 group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.872.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <div className="text-2xl font-bold text-slate-900 mb-1">{t('home.trustFollowersYT')}</div>
+              <div className="text-xs text-slate-500 uppercase tracking-wider">YouTube</div>
+            </motion.div>
+            {/* WhatsApp Channel */}
+            <motion.div className="bg-white border border-slate-200 shadow-sm rounded-3xl p-6 text-center hover:shadow-md transition-shadow group" initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay: 0.5}}>
+              <MessageCircle className="w-8 h-8 text-[#7195e0] mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <div className="text-2xl font-bold text-slate-900 mb-1">{t('home.trustFollowersWA')}</div>
+              <div className="text-[10px] text-slate-500 uppercase tracking-wider">WA Channel</div>
+            </motion.div>
+            {/* WhatsApp Groups */}
+            <motion.div className="bg-white border border-slate-200 shadow-sm rounded-3xl p-6 text-center hover:shadow-md transition-shadow group" initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{delay: 0.6}}>
+              <Users className="w-8 h-8 text-[#7195e0] mx-auto mb-4 group-hover:scale-110 transition-transform" />
+              <div className="text-2xl font-bold text-slate-900 mb-1">{t('home.trustMembersWAGroup')}</div>
+              <div className="text-[10px] text-slate-500 uppercase tracking-wider">WA Groups</div>
+            </motion.div>
+          </div>
+
+          {/* Success Stories Gallery */}
+          <motion.div 
+            className="mb-24"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-extrabold text-slate-900 mb-4">{t('home.successStoriesTitle')}</h3>
+              <p className="text-slate-500 max-w-2xl mx-auto">{t('home.successStoriesDesc')}</p>
+            </div>
+            
+            {/* Visa Images Marquee */}
+            <div className="relative overflow-hidden w-full max-w-[100vw] mx-auto group">
+              {/* Edge fades for a seamless infinite scroll look */}
+              <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#f4f7fc] to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#f4f7fc] to-transparent z-10 pointer-events-none"></div>
+              
+              <div className="flex animate-marquee space-x-6 whitespace-nowrap items-center w-max px-4">
+                {[1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7].map((num, idx) => (
+                  <div key={idx} className="flex-shrink-0 w-64 h-80 rounded-[2rem] overflow-hidden shadow-lg border border-slate-200 relative">
+                    <img src={`/visaImages/${num}.png`} alt={`Success Story ${num}`} className="w-full h-full object-cover" />
+                    <div className="absolute bottom-4 left-4 z-20 flex items-center gap-2 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm">
+                      <CheckCircle className="w-4 h-4 text-[#7195e0]" />
+                      <span className="text-slate-900 font-bold text-xs">Approved</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Our Impact summary */}
+          <motion.div 
+            className="bg-gradient-to-br from-[#7195e0] to-[#5a7bc2] rounded-[3rem] p-8 md:p-16 relative overflow-hidden shadow-2xl"
+            initial={{ opacity: 0, scale: 0.95, y: 30 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            {/* Decorative background vectors */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-slate-900/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
+              <div>
+                <h3 className="text-3xl md:text-5xl font-extrabold text-white font-manrope mb-6 drop-shadow-sm">{t('home.impactTitle')}</h3>
+                <div className="text-white/90 text-xl font-light mb-8 max-w-md">
+                  <span className="font-bold text-white text-4xl block mb-2">{t('home.trustImpactMonthly')}</span>
+                  {t('home.trustImpactMonthlyDesc')}
+                </div>
+              </div>
+              
+              <div className="space-y-4 md:space-y-6">
+                {[
+                  { icon: Activity, text: t('home.impact1') },
+                  { icon: Users, text: t('home.impact2') },
+                  { icon: CheckCircle, text: t('home.impact3') },
+                  { icon: Globe, text: t('home.impact4') }
+                ].map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                  <motion.div 
+                    key={index} 
+                    className="flex items-center gap-5 bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:bg-white/20 transition-colors"
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0 shadow-inner">
+                      <Icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="text-white font-medium text-lg">{item.text}</div>
+                  </motion.div>
+                )})}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* 3. Venture Showcase */}
       <section id="nossas-marcas" className="py-32 bg-white relative overflow-hidden">
         {/* Ambient glowing background effects */}
@@ -325,7 +465,7 @@ const Home = () => {
               <div className="h-[380px] w-full relative overflow-hidden flex items-center justify-center">
                  {/* Real photo background */}
                  <img 
-                   src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=80" 
+                   src="/onelinktravelimages/hero-main.jpg" 
                    alt="Travel Destination" 
                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
                  />
