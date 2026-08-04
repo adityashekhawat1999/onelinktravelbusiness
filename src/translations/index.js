@@ -90,6 +90,7 @@ const translations = {
       impact3Desc: "Consistent track record of turning global aspirations into reality.",
       impact4: "Trusted by Clients Worldwide",
       impact4Desc: "From ambitious students to elite professionals.",
+      approved: "Approved",
     },
     travel: {
       heroTitle1: "Your gateway",
@@ -309,6 +310,7 @@ const translations = {
       impact3Desc: "Historial consistente em transformar aspirações globais em realidade.",
       impact4: "Confiança de Clientes Globais",
       impact4Desc: "De estudantes ambiciosos a profissionais de elite.",
+      approved: "Aprovado",
     },
     travel: {
       heroTitle1: "A sua porta",

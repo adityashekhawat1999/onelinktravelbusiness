@@ -771,7 +771,7 @@ const Home = () => {
                 <img src={`/visaImages/${num}.png`} alt={`Success Story ${num}`} className="w-full h-full object-cover" />
                 <div className="absolute bottom-4 left-4 z-20 flex items-center gap-2 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm">
                   <CheckCircle className="w-4 h-4 text-[#7195e0]" />
-                  <span className="text-slate-900 font-bold text-xs">Approved</span>
+                  <span className="text-slate-900 font-bold text-xs">{t('home.approved')}</span>
                 </div>
               </div>
             ))}
