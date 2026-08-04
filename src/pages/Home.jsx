@@ -19,7 +19,8 @@ import {
   Users,
   CheckCircle,
   Activity,
-  Clock
+  Clock,
+  TrendingUp
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -445,18 +446,30 @@ const Home = () => {
           </div>
 
           <motion.div 
-            className="mt-16 text-center max-w-4xl mx-auto p-8 md:p-12 rounded-[2.5rem] bg-gradient-to-br from-white to-[#f8faff] border border-slate-200 shadow-[0_20px_60px_-15px_rgba(113,149,224,0.15)] relative overflow-hidden group hover:shadow-[0_30px_70px_-15px_rgba(113,149,224,0.25)] transition-all duration-700 hover:-translate-y-1"
+            className="mt-16 text-left max-w-4xl mx-auto group relative bg-slate-900 rounded-[2rem] p-6 md:p-8 overflow-hidden shadow-2xl transition-all duration-700 hover:-translate-y-2 flex flex-col md:flex-row items-center gap-6 md:gap-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.7 }}
           >
-            <div className="absolute -top-32 -right-32 w-80 h-80 bg-gradient-to-bl from-[#7195e0]/20 to-transparent rounded-full blur-3xl group-hover:scale-125 transition-transform duration-1000"></div>
-            <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-gradient-to-tr from-[#5a7bc2]/15 to-transparent rounded-full blur-3xl group-hover:scale-125 transition-transform duration-1000"></div>
+            {/* Animated dashed lines background */}
+            <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+            <div className="absolute -top-24 -left-24 w-64 h-64 bg-[#7195e0]/30 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-1000"></div>
             
-            <p className="text-2xl md:text-4xl text-slate-700 font-light leading-relaxed relative z-10 font-manrope">
-              <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#7195e0] to-[#5a7bc2]">{t('home.trustImpactMonthly')}</span> {t('home.trustImpactMonthlyDesc')}
-            </p>
+            <div className="relative z-10 shrink-0">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-[1rem] bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500">
+                <TrendingUp className="w-7 h-7 md:w-8 md:h-8 text-[#a5c2ff]" />
+              </div>
+            </div>
+            
+            <div className="relative z-10 text-center md:text-left">
+              <h4 className="text-2xl md:text-3xl font-extrabold text-white font-manrope mb-2 leading-tight group-hover:text-[#a5c2ff] transition-colors duration-500">
+                {t('home.trustImpactMonthly')}
+              </h4>
+              <p className="text-slate-400 font-light text-sm md:text-base leading-relaxed max-w-2xl">
+                {t('home.trustImpactMonthlyDesc')}
+              </p>
+            </div>
           </motion.div>
 
         </div>
