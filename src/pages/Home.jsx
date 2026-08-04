@@ -181,7 +181,7 @@ const globalPartners = [
 const clientAvatars = [
   "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=100&h=100&fit=crop",
   "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=100&h=100&fit=crop",
-  "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=100&h=100&fit=crop",
+  "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?w=100&h=100&fit=crop",
   "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=100&h=100&fit=crop"
 ];
 
