@@ -750,6 +750,7 @@ const Home = () => {
             viewport={{ once: true }}
           >
 
+            <span className="text-[#7195e0] font-semibold text-sm tracking-[0.2em] uppercase mb-4 block">{t('home.provenResults')}</span>
             <h2 className="text-4xl md:text-5xl font-extrabold font-manrope text-slate-900 tracking-tight mb-6">
               {t('home.successStoriesTitle1')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7195e0] to-[#5a7bc2]">{t('home.successStoriesTitle2')}</span>
             </h2>
@@ -786,7 +787,6 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-[#7195e0] font-semibold text-sm tracking-[0.2em] uppercase mb-4 block">Proven Results</span>
             <h2 className="text-5xl md:text-6xl font-extrabold font-manrope text-slate-900 mb-6 tracking-tight">
               {t('home.impactTitle1')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7195e0] to-[#5a7bc2]">{t('home.impactTitle2')}</span>
             </h2>

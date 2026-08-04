@@ -91,6 +91,7 @@ const translations = {
       impact4: "Trusted by Clients Worldwide",
       impact4Desc: "From ambitious students to elite professionals.",
       approved: "Approved",
+      provenResults: "Proven Results",
     },
     travel: {
       heroTitle1: "Your gateway",
@@ -311,6 +312,7 @@ const translations = {
       impact4: "Confiança de Clientes Globais",
       impact4Desc: "De estudantes ambiciosos a profissionais de elite.",
       approved: "Aprovado",
+      provenResults: "Resultados Comprovados",
     },
     travel: {
       heroTitle1: "A sua porta",
