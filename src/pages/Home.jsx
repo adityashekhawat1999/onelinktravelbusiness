@@ -181,7 +181,6 @@ const globalPartners = [
 const clientAvatars = [
   "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=100&h=100&fit=crop",
   "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=100&h=100&fit=crop",
-  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=100&h=100&fit=crop",
   "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=100&h=100&fit=crop"
 ];
 
@@ -356,7 +355,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 font-manrope tracking-tight group-hover:text-[#7195e0] transition-colors duration-500 relative z-10"><InlineCounter value={t('home.trustFollowersFB')} suffix="K+" /></div>
-              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">Facebook</div>
+              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">{t('home.socialLabelFB')}</div>
             </motion.div>
 
             {/* IG */}
@@ -373,7 +372,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 font-manrope tracking-tight group-hover:text-[#7195e0] transition-colors duration-500 relative z-10"><InlineCounter value={t('home.trustFollowersIG')} suffix="K+" /></div>
-              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">Instagram</div>
+              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">{t('home.socialLabelIG')}</div>
             </motion.div>
 
             {/* TikTok */}
@@ -390,7 +389,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 font-manrope tracking-tight group-hover:text-[#7195e0] transition-colors duration-500 relative z-10"><InlineCounter value={t('home.trustFollowersTikTok')} suffix="K+" /></div>
-              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">TikTok</div>
+              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">{t('home.socialLabelTikTok')}</div>
             </motion.div>
 
             {/* YouTube */}
@@ -407,7 +406,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 font-manrope tracking-tight group-hover:text-[#7195e0] transition-colors duration-500 relative z-10"><InlineCounter value={t('home.trustFollowersYT')} suffix="K+" /></div>
-              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">YouTube</div>
+              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">{t('home.socialLabelYT')}</div>
             </motion.div>
 
             {/* WhatsApp Channel */}
@@ -424,7 +423,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 font-manrope tracking-tight group-hover:text-[#7195e0] transition-colors duration-500 relative z-10"><InlineCounter value={t('home.trustFollowersWA')} suffix="K+" /></div>
-              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">WA Channel</div>
+              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">{t('home.socialLabelWA')}</div>
             </motion.div>
 
             {/* WhatsApp Groups */}
@@ -441,12 +440,24 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 font-manrope tracking-tight group-hover:text-[#7195e0] transition-colors duration-500 relative z-10"><InlineCounter value={t('home.trustMembersWAGroup')} suffix="K+" /></div>
-              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">WA Groups</div>
+              <div className="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold group-hover:text-slate-700 transition-colors duration-500 relative z-10">{t('home.socialLabelWAGroups')}</div>
             </motion.div>
           </div>
 
-
-
+          <motion.div 
+            className="mt-16 text-center max-w-4xl mx-auto p-8 md:p-12 rounded-[2.5rem] bg-gradient-to-br from-white to-[#f8faff] border border-slate-200 shadow-[0_20px_60px_-15px_rgba(113,149,224,0.15)] relative overflow-hidden group hover:shadow-[0_30px_70px_-15px_rgba(113,149,224,0.25)] transition-all duration-700 hover:-translate-y-1"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7 }}
+          >
+            <div className="absolute -top-32 -right-32 w-80 h-80 bg-gradient-to-bl from-[#7195e0]/20 to-transparent rounded-full blur-3xl group-hover:scale-125 transition-transform duration-1000"></div>
+            <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-gradient-to-tr from-[#5a7bc2]/15 to-transparent rounded-full blur-3xl group-hover:scale-125 transition-transform duration-1000"></div>
+            
+            <p className="text-2xl md:text-4xl text-slate-700 font-light leading-relaxed relative z-10 font-manrope">
+              <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#7195e0] to-[#5a7bc2]">{t('home.trustImpactMonthly')}</span> {t('home.trustImpactMonthlyDesc')}
+            </p>
+          </motion.div>
 
         </div>
       </section>
