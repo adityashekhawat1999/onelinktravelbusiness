@@ -155,6 +155,7 @@ const CBEST = () => {
   const form = useRef();
   const [showPopup, setShowPopup] = useState(false);
   const [isSending, setIsSending] = useState(false);
+  const [interestType, setInterestType] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -491,7 +492,13 @@ const CBEST = () => {
                   <input name="user_country" type="text" required placeholder={t('cbest.countryOfInterest')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
                   
                   <div className="relative">
-                    <select name="user_interest" required defaultValue="" className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
+                    <select 
+                      name="user_interest" 
+                      required 
+                      value={interestType}
+                      onChange={(e) => setInterestType(e.target.value)}
+                      className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer"
+                    >
                       <option value="" disabled className="text-slate-800">{t('cbest.uniOrScholarship')}</option>
                       <option value="University Enrollment" className="text-slate-800">{t('cbest.uniEnrollment')}</option>
                       <option value="Scholarship" className="text-slate-800">{t('cbest.scholarship')}</option>
@@ -500,7 +507,13 @@ const CBEST = () => {
                   </div>
 
                   <div className="relative">
-                    <select name="user_scholarship_type" required defaultValue="" className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
+                    <select 
+                      name="user_scholarship_type" 
+                      required={interestType !== 'University Enrollment'} 
+                      disabled={interestType === 'University Enrollment'}
+                      defaultValue="" 
+                      className={`w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer ${interestType === 'University Enrollment' ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    >
                       <option value="" disabled className="text-slate-800">{t('cbest.partOrFull')}</option>
                       <option value="Partially Funded" className="text-slate-800">{t('cbest.partiallyFunded')}</option>
                       <option value="Fully Funded" className="text-slate-800">{t('cbest.fullyFunded')}</option>
@@ -509,7 +522,13 @@ const CBEST = () => {
                   </div>
 
                   <div className="relative">
-                    <select name="user_scholarship_guarantee" required defaultValue="" className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
+                    <select 
+                      name="user_scholarship_guarantee" 
+                      required={interestType !== 'University Enrollment'}
+                      disabled={interestType === 'University Enrollment'}
+                      defaultValue="" 
+                      className={`w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer ${interestType === 'University Enrollment' ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    >
                       <option value="" disabled className="text-slate-800">{t('cbest.guaranteedOrSelection')}</option>
                       <option value="Guaranteed Scholarship" className="text-slate-800">{t('cbest.guaranteedScholarship')}</option>
                       <option value="Selection-Based Scholarship" className="text-slate-800">{t('cbest.selectionBasedScholarship')}</option>

@@ -765,7 +765,7 @@ const Home = () => {
       </section>
 
       {/* 4.6 Success Stories */}
-      <section className="py-24 bg-[#f4f7fc] relative overflow-hidden border-t border-b border-slate-100">
+      <section id="resultados-comprovados" className="py-24 bg-[#f4f7fc] relative overflow-hidden border-t border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16">
           <motion.div 
             className="text-center"

@@ -25,7 +25,7 @@ const Header = () => {
     { name: t('header.aboutUs'), href: "/#sobre-nos" },
     { name: t('header.ecosystem'), href: "/#nossas-marcas" },
     { name: t('header.partners'), href: "/#parceiros" },
-    { name: t('header.ourVision'), href: "/#equipa" },
+    { name: t('home.provenResults'), href: "/#resultados-comprovados" },
     { name: t('header.faqs'), href: "/#faqs" }
   ];
 
