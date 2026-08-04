@@ -2,7 +2,7 @@ const translations = {
   en: {
     header: {
       aboutUs: "About Us",
-      ecosystem: "Ecosystem",
+      ecosystem: "Our Brands",
       partners: "Partners",
       ourVision: "Our Vision",
       faqs: "FAQs"
@@ -229,7 +229,7 @@ const translations = {
   pt: {
     header: {
       aboutUs: "Sobre Nós",
-      ecosystem: "Ecossistema",
+      ecosystem: "Nossas Marcas",
       partners: "Parceiros",
       ourVision: "A Nossa Visão",
       faqs: "FAQs"
