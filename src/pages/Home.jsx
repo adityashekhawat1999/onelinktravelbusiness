@@ -473,11 +473,18 @@ const Home = () => {
               {/* Subtle glassmorphism overlay on hover */}
               <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 backdrop-blur-[2px] z-10"></div>
 
-              <div className="absolute bottom-0 left-0 right-0 p-5 pb-6 md:p-12 z-20 flex flex-col justify-end h-full">
-                <div className="w-12 h-[3px] bg-[#a5c2ff] mb-4 md:mb-6 transform origin-left group-hover:scale-x-150 transition-transform duration-700"></div>
-                <h3 className="text-3xl md:text-5xl font-extrabold text-white font-manrope mb-1 md:mb-2 tracking-tight drop-shadow-xl group-hover:-translate-y-2 transition-transform duration-700">Leonardo Eduardo</h3>
-                <p className="text-[#a5c2ff] font-bold text-[10px] md:text-xs tracking-[0.3em] uppercase mb-2 group-hover:-translate-y-2 transition-transform duration-700">{t('home.ceoRole')}</p>
-                <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]">
+              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-12 z-20 flex flex-col justify-end h-full">
+                <div className="w-10 md:w-12 h-[3px] bg-[#a5c2ff] mb-3 md:mb-6 transform origin-left group-hover:scale-x-150 transition-transform duration-700"></div>
+                <h3 className="text-2xl md:text-5xl font-extrabold text-white font-manrope mb-1 md:mb-2 tracking-tight drop-shadow-xl group-hover:-translate-y-2 transition-transform duration-700">Leonardo Eduardo</h3>
+                <p className="text-[#a5c2ff] font-bold text-[9px] md:text-xs tracking-[0.3em] uppercase md:mb-2 group-hover:-translate-y-2 transition-transform duration-700">{t('home.ceoRole')}</p>
+                
+                {/* Mobile Description (always visible) */}
+                <p className="md:hidden text-white/85 text-[10px] leading-snug pt-2 drop-shadow-md">
+                  {t('home.leonardoDescMobile')}
+                </p>
+
+                {/* Desktop Description (hover only) */}
+                <div className="hidden md:grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]">
                   <div className="overflow-hidden">
                     <p className="text-white/90 text-sm font-medium leading-relaxed pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
                       {t('home.leonardoDesc')}
@@ -506,11 +513,18 @@ const Home = () => {
               {/* Subtle glassmorphism overlay on hover */}
               <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 backdrop-blur-[2px] z-10"></div>
 
-              <div className="absolute bottom-0 left-0 right-0 p-5 pb-6 md:p-12 z-20 flex flex-col justify-end h-full">
-                <div className="w-12 h-[3px] bg-[#a5c2ff] mb-4 md:mb-6 transform origin-left group-hover:scale-x-150 transition-transform duration-700"></div>
-                <h3 className="text-3xl md:text-5xl font-extrabold text-white font-manrope mb-1 md:mb-2 tracking-tight drop-shadow-xl group-hover:-translate-y-2 transition-transform duration-700">Bernardo Adão</h3>
-                <p className="text-[#a5c2ff] font-bold text-[10px] md:text-xs tracking-[0.3em] uppercase mb-2 group-hover:-translate-y-2 transition-transform duration-700">{t('home.directorRole')}</p>
-                <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]">
+              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-12 z-20 flex flex-col justify-end h-full">
+                <div className="w-10 md:w-12 h-[3px] bg-[#a5c2ff] mb-3 md:mb-6 transform origin-left group-hover:scale-x-150 transition-transform duration-700"></div>
+                <h3 className="text-2xl md:text-5xl font-extrabold text-white font-manrope mb-1 md:mb-2 tracking-tight drop-shadow-xl group-hover:-translate-y-2 transition-transform duration-700">Bernardo Adão</h3>
+                <p className="text-[#a5c2ff] font-bold text-[9px] md:text-xs tracking-[0.3em] uppercase md:mb-2 group-hover:-translate-y-2 transition-transform duration-700">{t('home.directorRole')}</p>
+                
+                {/* Mobile Description (always visible) */}
+                <p className="md:hidden text-white/85 text-[10px] leading-snug pt-2 drop-shadow-md">
+                  {t('home.bernardoDescMobile')}
+                </p>
+
+                {/* Desktop Description (hover only) */}
+                <div className="hidden md:grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]">
                   <div className="overflow-hidden">
                     <p className="text-white/90 text-sm font-medium leading-relaxed pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
                       {t('home.bernardoDesc')}
