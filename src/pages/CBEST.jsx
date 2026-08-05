@@ -162,10 +162,10 @@ const CBEST = () => {
     setIsSending(true);
 
     emailjs.sendForm(
-      'service_k92qz8l',
-      'template_pgwxjir',
+      'service_99e74c5',
+      'template_ibifln7',
       form.current,
-      'RQvWc_EmOHHKH1E8E'
+      'spMduFQep1jAVdCd1'
     )
       .then(() => {
         setShowPopup(true);
@@ -483,17 +483,17 @@ const CBEST = () => {
 
               <form ref={form} onSubmit={sendEmail} className="space-y-5 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <input name="user_name" type="text" required placeholder={t('cbest.name')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
-                  <input name="user_email" type="email" required placeholder={t('cbest.email')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="name" type="text" required placeholder={t('cbest.name')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="email" type="email" required placeholder={t('cbest.email')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
                   
-                  <input name="user_age" type="number" required min="16" max="100" placeholder={t('cbest.age')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
-                  <input name="user_whatsapp" type="tel" required placeholder={t('cbest.whatsapp')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="age" type="number" required min="16" max="100" placeholder={t('cbest.age')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="whatsapp" type="tel" required placeholder={t('cbest.whatsapp')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
                   
-                  <input name="user_country" type="text" required placeholder={t('cbest.countryOfInterest')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="country" type="text" required placeholder={t('cbest.countryOfInterest')} className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white placeholder-slate-400 focus:bg-white/20 focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
                   
                   <div className="relative">
                     <select 
-                      name="user_interest" 
+                      name="application_type" 
                       required 
                       value={interestType}
                       onChange={(e) => setInterestType(e.target.value)}
@@ -508,7 +508,7 @@ const CBEST = () => {
 
                   <div className="relative">
                     <select 
-                      name="user_scholarship_type" 
+                      name="funding" 
                       required={interestType !== 'University Enrollment'} 
                       disabled={interestType === 'University Enrollment'}
                       defaultValue="" 
@@ -523,7 +523,7 @@ const CBEST = () => {
 
                   <div className="relative">
                     <select 
-                      name="user_scholarship_guarantee" 
+                      name="scholarship_type" 
                       required={interestType !== 'University Enrollment'}
                       disabled={interestType === 'University Enrollment'}
                       defaultValue="" 

@@ -452,10 +452,10 @@ const OneLinkTravel = () => {
     setIsSending(true);
 
     emailjs.sendForm(
-      'service_k92qz8l',
-      'template_pgwxjir',
+      'service_99e74c5',
+      'template_q6wzv9f',
       form.current,
-      'RQvWc_EmOHHKH1E8E'
+      'spMduFQep1jAVdCd1'
     )
       .then(() => {
         setShowPopup(true);
@@ -919,14 +919,14 @@ const OneLinkTravel = () => {
 
               <form ref={form} onSubmit={sendEmail} className="space-y-5 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <input name="user_name" type="text" required placeholder={t('travel.name')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
-                  <input name="user_email" type="email" required placeholder={t('travel.email')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="name" type="text" required placeholder={t('travel.name')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="email" type="email" required placeholder={t('travel.email')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
                   
-                  <input name="user_age" type="number" required min="18" max="100" placeholder={t('travel.age')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
-                  <input name="user_whatsapp" type="tel" required placeholder={t('travel.phone')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="age" type="number" required min="18" max="100" placeholder={t('travel.age')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
+                  <input name="whatsapp" type="tel" required placeholder={t('travel.phone')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
                   
                   <div className="relative">
-                    <select name="user_country" required defaultValue="" className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
+                    <select name="destination_country" required defaultValue="" className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
                       <option value="" disabled>{t('travel.country')}</option>
                       {currentDestinations.map((dest, idx) => (
                         <option key={idx} value={dest.name}>{dest.name}</option>
@@ -936,7 +936,7 @@ const OneLinkTravel = () => {
                   </div>
                   
                   <div className="relative">
-                    <select name="user_visa" required defaultValue="" className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
+                    <select name="visa_type" required defaultValue="" className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
                       <option value="" disabled>{t('travel.visaTypePlaceholder')}</option>
                       <option value="Estudante">{t('travel.visaTypes.student')}</option>
                       <option value="Trabalho">{t('travel.visaTypes.work')}</option>
