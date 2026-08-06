@@ -88,6 +88,27 @@ export const destinationsPT = [
     img: "/onelinktravelimages/montenegro.jpg",
     pdf: "/catalogs/montenegroDoc.pdf",
     details: { salary: "€700/mês", jobs: "Manutenção e Ar Livre", week: "40 h/semana", accommodation: "Fornecido", extra: "Horas Extras e Feriados" }
+  },
+  {
+    name: "França",
+    desc: "Oportunidades de trabalho",
+    img: "/onelinktravelimages/france.jpg",
+    pdf: "/catalogs/franceDoc.pdf",
+    details: { salary: "€1.800–2.300/mês", jobs: "Serralharia e Produção Leiteira", hours: "Lei laboral francesa", accommodation: "Gratuito", experience: "Necessária" }
+  },
+  {
+    name: "Espanha",
+    desc: "Visto de Nómada Digital",
+    img: "/onelinktravelimages/spain.jpg",
+    pdf: "/catalogs/spainDoc.pdf",
+    details: { salary: "€2.860/mês", jobs: "Trabalho Remoto", accommodation: "—", experience: "Qualificações necessárias" }
+  },
+  {
+    name: "Bulgária",
+    desc: "Trabalho e residência",
+    img: "/onelinktravelimages/bulgaria.jpg",
+    pdf: "/catalogs/bulgariaDoc.pdf",
+    details: { salary: "€600–1.300/mês", jobs: "Hotelaria e Turismo", hours: "8–10 h/dia", accommodation: "Gratuito", experience: "Necessária" }
   }
 ];
 
@@ -175,6 +196,27 @@ export const destinationsEN = [
     img: "/onelinktravelimages/montenegro.jpg",
     pdf: "/catalogs/montenegroDoc.pdf",
     details: { salary: "€700/month", jobs: "Maintenance and Outdoors", week: "40 h/week", accommodation: "Provided", extra: "Overtime and Holidays" }
+  },
+  {
+    name: "France",
+    desc: "Work opportunities",
+    img: "/onelinktravelimages/france.jpg",
+    pdf: "/catalogs/franceDoc.pdf",
+    details: { salary: "€1,800–€2,300/month", jobs: "Locksmith & Dairy Farm Work", hours: "As per French labour law", accommodation: "Free", experience: "Required" }
+  },
+  {
+    name: "Spain",
+    desc: "Digital Nomad Visa",
+    img: "/onelinktravelimages/spain.jpg",
+    pdf: "/catalogs/spainDoc.pdf",
+    details: { salary: "€2,860/month", jobs: "Remote Jobs", accommodation: "—", experience: "Qualifications Required" }
+  },
+  {
+    name: "Bulgaria",
+    desc: "Work and residence",
+    img: "/onelinktravelimages/bulgaria.jpg",
+    pdf: "/catalogs/bulgariaDoc.pdf",
+    details: { salary: "€600–€1,300/month", jobs: "Hospitality & Tourism", hours: "8–10 hrs/day", accommodation: "Free", experience: "Required" }
   }
 ];
 
