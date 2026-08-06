@@ -157,6 +157,10 @@ const CBEST = () => {
   const [isSending, setIsSending] = useState(false);
   const [interestType, setInterestType] = useState("");
 
+  useEffect(() => {
+    setInterestType("");
+  }, [language]);
+
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -500,8 +504,8 @@ const CBEST = () => {
                       className="w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer"
                     >
                       <option value="" disabled className="text-slate-800">{t('cbest.uniOrScholarship')}</option>
-                      <option value="University Enrollment" className="text-slate-800">{t('cbest.uniEnrollment')}</option>
-                      <option value="Scholarship" className="text-slate-800">{t('cbest.scholarship')}</option>
+                      <option value={t('cbest.uniEnrollment')} className="text-slate-800">{t('cbest.uniEnrollment')}</option>
+                      <option value={t('cbest.scholarship')} className="text-slate-800">{t('cbest.scholarship')}</option>
                     </select>
                     <ChevronDown className="w-4 h-4 absolute right-5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                   </div>
@@ -509,14 +513,14 @@ const CBEST = () => {
                   <div className="relative">
                     <select 
                       name="funding" 
-                      required={interestType !== 'University Enrollment'} 
-                      disabled={interestType === 'University Enrollment'}
+                      required={interestType !== t('cbest.uniEnrollment')} 
+                      disabled={interestType === t('cbest.uniEnrollment')}
                       defaultValue="" 
-                      className={`w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer ${interestType === 'University Enrollment' ? 'opacity-50 cursor-not-allowed' : ''}`}
+                      className={`w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer ${interestType === t('cbest.uniEnrollment') ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
                       <option value="" disabled className="text-slate-800">{t('cbest.partOrFull')}</option>
-                      <option value="Partially Funded" className="text-slate-800">{t('cbest.partiallyFunded')}</option>
-                      <option value="Fully Funded" className="text-slate-800">{t('cbest.fullyFunded')}</option>
+                      <option value={t('cbest.partiallyFunded')} className="text-slate-800">{t('cbest.partiallyFunded')}</option>
+                      <option value={t('cbest.fullyFunded')} className="text-slate-800">{t('cbest.fullyFunded')}</option>
                     </select>
                     <ChevronDown className="w-4 h-4 absolute right-5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                   </div>
@@ -524,14 +528,14 @@ const CBEST = () => {
                   <div className="relative">
                     <select 
                       name="scholarship_type" 
-                      required={interestType !== 'University Enrollment'}
-                      disabled={interestType === 'University Enrollment'}
+                      required={interestType !== t('cbest.uniEnrollment')}
+                      disabled={interestType === t('cbest.uniEnrollment')}
                       defaultValue="" 
-                      className={`w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer ${interestType === 'University Enrollment' ? 'opacity-50 cursor-not-allowed' : ''}`}
+                      className={`w-full bg-white/10 border border-white/20 rounded-2xl px-5 py-4 outline-none text-white focus:bg-[#1a0f14] focus:border-[#c4778a] shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer ${interestType === t('cbest.uniEnrollment') ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
                       <option value="" disabled className="text-slate-800">{t('cbest.guaranteedOrSelection')}</option>
-                      <option value="Guaranteed Scholarship" className="text-slate-800">{t('cbest.guaranteedScholarship')}</option>
-                      <option value="Selection-Based Scholarship" className="text-slate-800">{t('cbest.selectionBasedScholarship')}</option>
+                      <option value={t('cbest.guaranteedScholarship')} className="text-slate-800">{t('cbest.guaranteedScholarship')}</option>
+                      <option value={t('cbest.selectionBasedScholarship')} className="text-slate-800">{t('cbest.selectionBasedScholarship')}</option>
                     </select>
                     <ChevronDown className="w-4 h-4 absolute right-5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                   </div>
