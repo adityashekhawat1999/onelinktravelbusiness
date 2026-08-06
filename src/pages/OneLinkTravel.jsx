@@ -254,8 +254,8 @@ const ServiceCard = ({ service, language }) => {
           onClick={() => setIsExpanded(!isExpanded)}
           className="mt-4 flex items-center gap-1 text-[9px] font-bold tracking-widest uppercase text-slate-500 hover:text-slate-800 transition-colors self-start"
         >
-          {isExpanded 
-            ? (language === 'en' ? 'SEE LESS ↑' : 'VER MENOS ↑') 
+          {isExpanded
+            ? (language === 'en' ? 'SEE LESS ↑' : 'VER MENOS ↑')
             : (language === 'en' ? 'READ MORE →' : 'LER MAIS →')}
         </button>
       </div>
@@ -342,7 +342,7 @@ const VideoCard = ({ video, index }) => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.play().catch(() => {});
+      videoRef.current.play().catch(() => { });
     }
   }, []);
 
@@ -352,7 +352,7 @@ const VideoCard = ({ video, index }) => {
         videoRef.current.pause();
         setIsPlaying(false);
         setIsMuted(true);
-        videoRef.current.play().catch(() => {});
+        videoRef.current.play().catch(() => { });
       } else {
         videoRef.current.currentTime = 0;
         videoRef.current.play();
@@ -376,7 +376,7 @@ const VideoCard = ({ video, index }) => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -393,7 +393,7 @@ const VideoCard = ({ video, index }) => {
         className={`absolute inset-0 w-full h-full transition-all duration-700 ${isPlaying ? 'object-contain scale-100 bg-black/90' : `object-cover scale-105 group-hover:scale-110 ${video.position || 'object-center'}`}`}
       />
       <div className={`absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent transition-opacity duration-500 ${isPlaying ? 'opacity-0' : 'opacity-80 group-hover:opacity-40'}`} />
-      
+
       <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${isPlaying ? 'opacity-0' : 'opacity-0 group-hover:opacity-100'}`}>
         <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-xl flex items-center justify-center border border-white/30 text-white shadow-[0_0_40px_rgba(255,255,255,0.3)] transform transition-transform group-hover:scale-110">
           <svg className="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z" /></svg>
@@ -408,19 +408,19 @@ const VideoCard = ({ video, index }) => {
 
       {isPlaying && (
         <div className="absolute top-6 right-6 flex gap-3 z-10">
-           <button onClick={(e) => { e.stopPropagation(); setIsMuted(!isMuted); }} className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-xl text-white flex items-center justify-center border border-white/20 hover:bg-black/60 transition-colors shadow-lg">
-             {isMuted ? (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" /></svg>
-             ) : (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
-             )}
-           </button>
-           <button onClick={handleFullscreen} className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-xl text-white flex items-center justify-center border border-white/20 hover:bg-black/60 transition-colors shadow-lg">
-             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
-           </button>
-           <button onClick={(e) => { e.stopPropagation(); handleToggle(); }} className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-xl text-white flex items-center justify-center border border-white/20 hover:bg-black/60 transition-colors shadow-lg">
-             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd" /></svg>
-           </button>
+          <button onClick={(e) => { e.stopPropagation(); setIsMuted(!isMuted); }} className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-xl text-white flex items-center justify-center border border-white/20 hover:bg-black/60 transition-colors shadow-lg">
+            {isMuted ? (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" /></svg>
+            ) : (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+            )}
+          </button>
+          <button onClick={handleFullscreen} className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-xl text-white flex items-center justify-center border border-white/20 hover:bg-black/60 transition-colors shadow-lg">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
+          </button>
+          <button onClick={(e) => { e.stopPropagation(); handleToggle(); }} className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-xl text-white flex items-center justify-center border border-white/20 hover:bg-black/60 transition-colors shadow-lg">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd" /></svg>
+          </button>
         </div>
       )}
     </motion.div>
@@ -488,6 +488,8 @@ const OneLinkTravel = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [isSending, setIsSending] = useState(false);
   const [showAllDestinations, setShowAllDestinations] = useState(false);
+  const [activeCard, setActiveCard] = useState(null);
+  const [isClickSafe, setIsClickSafe] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -579,29 +581,33 @@ const OneLinkTravel = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 relative z-20">
             {currentDestinations.slice(0, showAllDestinations ? undefined : 3).map((country, index) => (
-              <div key={index} className="relative w-full h-[250px] z-10 hover:z-50 group">
+              <div 
+                key={index} 
+                className="relative w-full h-[250px] z-10 hover:z-50 group"
+                data-active={activeCard === index}
+              >
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: (index % 6) * 0.1 }}
-                  className="absolute inset-0 bg-[#1e293b] rounded-3xl overflow-hidden shadow-lg group-hover:-inset-x-3 group-hover:-inset-y-16 group-hover:shadow-2xl group-hover:shadow-black/50 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] flex flex-col"
+                  className="absolute inset-0 bg-[#1e293b] rounded-3xl overflow-hidden shadow-lg md:group-hover:-inset-x-3 md:group-hover:-inset-y-16 group-hover:shadow-2xl group-hover:shadow-black/50 md:group-data-[active=true]:-inset-x-3 md:group-data-[active=true]:-inset-y-16 group-data-[active=true]:shadow-2xl group-data-[active=true]:shadow-black/50 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] flex flex-col"
                 >
                   {/* Background Image Layer */}
                   <div className="absolute inset-0 w-full h-full">
                     <img
                       src={country.img}
                       alt={country.name}
-                      className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-1000 md:group-hover:scale-110 group-data-[active=true]:scale-110"
                     />
                     {/* Base Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-70 group-hover:opacity-95 group-hover:backdrop-blur-md transition-all duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-70 md:group-hover:opacity-95 md:group-hover:backdrop-blur-md group-data-[active=true]:opacity-95 group-data-[active=true]:backdrop-blur-md transition-all duration-500"></div>
                     {/* Darker overlay on hover for better legibility */}
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-black/40 opacity-0 md:group-hover:opacity-100 group-data-[active=true]:opacity-100 transition-opacity duration-500"></div>
                   </div>
 
                   {/* Unhovered View (Bottom Typography) */}
-                  <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end transform transition-transform duration-500 group-hover:translate-y-8 group-hover:opacity-0 pointer-events-none">
+                  <div className="absolute bottom-0 left-0 w-full p-6 pb-12 md:pb-6 flex flex-col justify-end transform transition-transform duration-500 md:group-hover:translate-y-8 md:group-hover:opacity-0 group-data-[active=true]:translate-y-8 group-data-[active=true]:opacity-0 pointer-events-none">
                     <div className="w-8 h-[2px] bg-[#7195e0] mb-3"></div>
                     <h3 className="text-2xl font-bold text-white font-manrope mb-1 tracking-tight">
                       {country.name}
@@ -609,67 +615,89 @@ const OneLinkTravel = () => {
                     <p className="text-slate-300 font-worksans text-sm font-light leading-relaxed">
                       {country.desc}
                     </p>
-                    {country.pdf && (
-                      <a href={country.pdf} download className="mt-4 pointer-events-auto md:hidden bg-white/20 active:bg-white/40 transition-colors text-white py-2 rounded-xl text-center text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border border-white/20 shadow-lg flex items-center justify-center gap-2">
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                        {t('travel.clickMoreInfo')}
-                      </a>
-                    )}
+                    <button 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setActiveCard(index);
+                        setIsClickSafe(false);
+                        setTimeout(() => setIsClickSafe(true), 500);
+                      }}
+                      className="mt-4 pointer-events-auto md:hidden bg-white/20 active:bg-white/40 transition-colors text-white py-2 rounded-xl text-center text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border border-white/20 shadow-lg flex items-center justify-center gap-2"
+                    >
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                      {t('travel.readMore')}
+                    </button>
                   </div>
 
                   {/* Hovered View (Detailed Info) */}
-                  <div className="absolute inset-0 p-5 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 delay-[50ms] transform -translate-y-4 group-hover:translate-y-0 pointer-events-none">
-                    <h3 className="text-3xl font-extrabold text-white font-manrope mb-4 text-center tracking-tight drop-shadow-lg">
+                  <div className="absolute inset-0 p-3 md:p-5 flex flex-col justify-center opacity-0 md:group-hover:opacity-100 group-data-[active=true]:opacity-100 transition-all duration-500 delay-[50ms] transform -translate-y-4 md:group-hover:translate-y-0 group-data-[active=true]:translate-y-0 pointer-events-none md:group-hover:pointer-events-auto group-data-[active=true]:pointer-events-auto z-50">
+                    <button 
+                      onClick={(e) => { e.preventDefault(); e.stopPropagation(); setActiveCard(null); }}
+                      className="absolute top-2 right-2 md:top-4 md:right-4 text-white/50 hover:text-white md:hidden z-50 p-2"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                    <h3 className="text-lg md:text-3xl font-extrabold text-white font-manrope mb-1.5 md:mb-4 text-center tracking-tight drop-shadow-lg mt-1 md:mt-0">
                       {country.name}
                     </h3>
 
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-1.5 md:gap-2">
                       {country.details.salary && (
-                        <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-xl p-2.5 border border-white/20 shadow-inner">
-                          <Banknote className="w-5 h-5 text-[#f8c1cc]" strokeWidth={1.5} />
+                        <div className="flex items-center gap-2 md:gap-3 bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-1.5 md:p-2.5 border border-white/20 shadow-inner">
+                          <Banknote className="w-3 h-3 md:w-5 md:h-5 text-[#f8c1cc]" strokeWidth={1.5} />
                           <div className="flex flex-col">
-                            <span className="text-[9px] text-slate-300 font-bold tracking-widest uppercase">{t('travel.salary')}</span>
-                            <span className="text-[13px] font-medium text-white">{country.details.salary}</span>
+                            <span className="text-[7px] md:text-[9px] text-slate-300 font-bold tracking-widest uppercase leading-none mb-0.5">{t('travel.salary')}</span>
+                            <span className="text-[10px] md:text-[13px] font-medium text-white leading-none">{country.details.salary}</span>
                           </div>
                         </div>
                       )}
 
                       {country.details.jobs && (
-                        <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-xl p-2.5 border border-white/20 shadow-inner">
-                          <Briefcase className="w-5 h-5 text-[#b4c6ef]" strokeWidth={1.5} />
+                        <div className="flex items-center gap-2 md:gap-3 bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-1.5 md:p-2.5 border border-white/20 shadow-inner">
+                          <Briefcase className="w-3 h-3 md:w-5 md:h-5 text-[#b4c6ef]" strokeWidth={1.5} />
                           <div className="flex flex-col">
-                            <span className="text-[9px] text-slate-300 font-bold tracking-widest uppercase">{t('travel.jobs')}</span>
-                            <span className="text-[12px] font-medium text-white leading-tight">{country.details.jobs}</span>
+                            <span className="text-[7px] md:text-[9px] text-slate-300 font-bold tracking-widest uppercase leading-none mb-0.5">{t('travel.jobs')}</span>
+                            <span className="text-[9px] md:text-[12px] font-medium text-white leading-tight">{country.details.jobs}</span>
                           </div>
                         </div>
                       )}
 
                       {(country.details.hours || country.details.days || country.details.week) && (
-                        <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-xl p-2.5 border border-white/20 shadow-inner">
-                          <Clock className="w-5 h-5 text-[#7195e0]" strokeWidth={1.5} />
+                        <div className="flex items-center gap-2 md:gap-3 bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-1.5 md:p-2.5 border border-white/20 shadow-inner">
+                          <Clock className="w-3 h-3 md:w-5 md:h-5 text-[#7195e0]" strokeWidth={1.5} />
                           <div className="flex flex-col">
-                            <span className="text-[9px] text-slate-300 font-bold tracking-widest uppercase">{t('travel.hours')}</span>
-                            <span className="text-[12px] font-medium text-white leading-tight">
+                            <span className="text-[7px] md:text-[9px] text-slate-300 font-bold tracking-widest uppercase leading-none mb-0.5">{t('travel.hours')}</span>
+                            <span className="text-[9px] md:text-[12px] font-medium text-white leading-tight">
                               {[country.details.hours, country.details.days, country.details.week].filter(Boolean).join(" • ")}
                             </span>
                           </div>
                         </div>
                       )}
 
-                      <div className="flex items-start gap-3 bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/20 shadow-inner mt-1">
-                        <CheckCircle className="w-5 h-5 text-[#e89cae] shrink-0 mt-0.5" strokeWidth={1.5} />
-                        <div className="flex flex-col gap-1 w-full">
-                          {country.details.accommodation && <span className="text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.accommodation')}</span> <span className="text-right">{country.details.accommodation}</span></span>}
-                          {country.details.requirements && <span className="text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.requirements')}</span> <span className="text-right">{country.details.requirements}</span></span>}
-                          {country.details.experience && <span className="text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.experience')}</span> <span className="text-right">{country.details.experience}</span></span>}
-                          {country.details.benefits && <span className="text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.benefits')}</span> <span className="text-right truncate">{country.details.benefits}</span></span>}
-                          {country.details.extra && <span className="text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.extra')}</span> <span className="text-right truncate">{country.details.extra}</span></span>}
+                      <div className="flex items-start gap-2 md:gap-3 bg-white/10 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-3 border border-white/20 shadow-inner mt-0.5 md:mt-1">
+                        <CheckCircle className="w-3 h-3 md:w-5 md:h-5 text-[#e89cae] shrink-0 mt-0.5" strokeWidth={1.5} />
+                        <div className="flex flex-col gap-0.5 md:gap-1 w-full">
+                          {country.details.accommodation && <span className="text-[9px] md:text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.accommodation')}</span> <span className="text-right">{country.details.accommodation}</span></span>}
+                          {country.details.requirements && <span className="text-[9px] md:text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.requirements')}</span> <span className="text-right">{country.details.requirements}</span></span>}
+                          {country.details.experience && <span className="text-[9px] md:text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.experience')}</span> <span className="text-right">{country.details.experience}</span></span>}
+                          {country.details.benefits && <span className="text-[9px] md:text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.benefits')}</span> <span className="text-right truncate">{country.details.benefits}</span></span>}
+                          {country.details.extra && <span className="text-[9px] md:text-[11px] font-medium text-white flex justify-between"><span className="text-slate-300 mr-2">{t('travel.extra')}</span> <span className="text-right truncate">{country.details.extra}</span></span>}
                         </div>
                       </div>
-                      
+
                       {country.pdf && (
-                        <a href={country.pdf} download className="mt-3 pointer-events-auto bg-white/20 hover:bg-white/30 transition-colors text-white py-2 rounded-xl text-center text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border border-white/20 shadow-[0_4px_10px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_15px_rgba(0,0,0,0.2)] flex items-center justify-center gap-2">
-                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        <a 
+                          href={country.pdf} 
+                          download 
+                          onClick={(e) => {
+                            if (activeCard !== null && !isClickSafe) {
+                              e.preventDefault();
+                            }
+                          }}
+                          className="mt-1.5 md:mt-3 pointer-events-auto bg-white/20 hover:bg-white/30 transition-colors text-white py-1 md:py-2 rounded-lg md:rounded-xl text-center text-[8px] md:text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border border-white/20 shadow-[0_4px_10px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_15px_rgba(0,0,0,0.2)] flex items-center justify-center gap-1.5 md:gap-2"
+                        >
+                          <svg className="w-2.5 h-2.5 md:w-3 md:h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                           {t('travel.clickMoreInfo')}
                         </a>
                       )}
@@ -747,19 +775,19 @@ const OneLinkTravel = () => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col items-center text-center mb-16 gap-6">
             <div className="max-w-4xl w-full">
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 className="text-slate-700 text-[11px] font-bold tracking-[0.3em] uppercase mb-6 block"
               >
                 {t('travel.videosSubtitle')}
               </motion.span>
-              <motion.h2 
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
                 className="text-4xl md:text-5xl font-medium text-slate-900 mb-6 tracking-tight font-manrope drop-shadow-sm"
               >
                 {t('travel.videosTitle')}
               </motion.h2>
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
                 className="text-slate-600 text-sm md:text-base max-w-xl mx-auto leading-relaxed font-medium"
               >
@@ -963,10 +991,10 @@ const OneLinkTravel = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <input name="name" type="text" required placeholder={t('travel.name')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
                   <input name="email" type="email" required placeholder={t('travel.email')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
-                  
+
                   <input name="age" type="number" required min="18" max="100" placeholder={t('travel.age')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
                   <input name="whatsapp" type="tel" required placeholder={t('travel.phone')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md" />
-                  
+
                   <div className="relative">
                     <select name="destination_country" required defaultValue="" className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
                       <option value="" disabled>{t('travel.country')}</option>
@@ -976,7 +1004,7 @@ const OneLinkTravel = () => {
                     </select>
                     <ChevronDown className="w-4 h-4 absolute right-5 top-1/2 -translate-y-1/2 text-slate-600 pointer-events-none" />
                   </div>
-                  
+
                   <div className="relative">
                     <select name="visa_type" required defaultValue="" className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md appearance-none cursor-pointer">
                       <option value="" disabled>{t('travel.visaTypePlaceholder')}</option>
@@ -988,7 +1016,7 @@ const OneLinkTravel = () => {
                     <ChevronDown className="w-4 h-4 absolute right-5 top-1/2 -translate-y-1/2 text-slate-600 pointer-events-none" />
                   </div>
                 </div>
-                
+
                 <textarea name="message" rows="4" required placeholder={t('travel.message')} className="w-full bg-white/40 border border-white/50 rounded-2xl px-5 py-4 outline-none text-slate-900 placeholder-slate-600 resize-none focus:bg-white/60 focus:border-white shadow-inner transition-all text-sm font-medium backdrop-blur-md"></textarea>
 
                 <div className="flex flex-col sm:flex-row items-center justify-between pt-4 gap-6">
