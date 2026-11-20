@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Exclude error and simulation routes from indexing
+Disallow: /404
+Disallow: /500
+Disallow: /403
+Disallow: /503
+Disallow: /error/
+Disallow: /test-500-crash
+
+Sitemap: https://onelinkholding.com/sitemap.xml
