@@ -9,4 +9,5 @@ Disallow: /503
 Disallow: /error/
 Disallow: /test-500-crash
 
+Sitemap: https://www.onelinkholding.com/sitemap.xml
 Sitemap: https://onelinkholding.com/sitemap.xml

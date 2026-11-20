@@ -4,35 +4,35 @@
 
   <!-- Home / One Link Holding Group -->
   <url>
-    <loc>https://onelinkholding.com/</loc>
+    <loc>https://www.onelinkholding.com/</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://onelinkholding.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://onelinkholding.com/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://onelinkholding.com/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.onelinkholding.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.onelinkholding.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.onelinkholding.com/" />
   </url>
 
   <!-- One Link Travel (Visas & Global Mobility) -->
   <url>
-    <loc>https://onelinkholding.com/onelinktravel</loc>
+    <loc>https://www.onelinkholding.com/onelinktravel</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://onelinkholding.com/onelinktravel" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://onelinkholding.com/onelinktravel" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://onelinkholding.com/onelinktravel" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.onelinkholding.com/onelinktravel" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.onelinkholding.com/onelinktravel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.onelinkholding.com/onelinktravel" />
   </url>
 
   <!-- CBEST Agency (International Education & Scholarships) -->
   <url>
-    <loc>https://onelinkholding.com/cbest</loc>
+    <loc>https://www.onelinkholding.com/cbest</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://onelinkholding.com/cbest" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://onelinkholding.com/cbest" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://onelinkholding.com/cbest" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.onelinkholding.com/cbest" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.onelinkholding.com/cbest" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.onelinkholding.com/cbest" />
   </url>
 
 </urlset>
