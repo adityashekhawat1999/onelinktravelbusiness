@@ -225,6 +225,54 @@ const translations = {
       successStories: "Success Stories",
       whatOurStudentsSay: "What Our ",
       studentsSay: "Students Say"
+    },
+    errors: {
+      common: {
+        goHome: "Return to Home",
+        goBack: "Go Back",
+        contactSupport: "Contact Support",
+        whatsappSupport: "Talk to Us on WhatsApp",
+        needHelp: "Need immediate assistance with your travel or study plans?",
+        helpfulLinks: "Quick navigation to our platforms",
+        homeTitle: "One Link Holding",
+        homeDesc: "Group overview, leadership, and vision",
+        travelTitle: "One Link Travel",
+        travelDesc: "Work, student, and tourism visa consultancy",
+        cbestTitle: "CBEST Agency",
+        cbestDesc: "International academic admissions and scholarships",
+        faqsTitle: "Help & FAQs",
+        faqsDesc: "Common questions about our services"
+      },
+      notFound: {
+        badge: "Error 404 • Page Not Found",
+        title: "Lost Your Way?",
+        subtitle: "The page you're trying to reach doesn't exist, has been moved, or the link may be broken.",
+        hint: "Check the address or explore our services below."
+      },
+      serverError: {
+        badge: "Error 500 • Internal Server Error",
+        title: "Something Went Wrong",
+        subtitle: "We experienced an unexpected problem loading this page. Our technical team has been notified.",
+        reload: "Reload Page",
+        tryAgain: "Try Again",
+        detailsTitle: "Technical Diagnostics",
+        detailsSubtitle: "Share these details if you contact support:",
+        copyError: "Copy Error",
+        copied: "Copied!",
+        noDetails: "No additional error stack provided."
+      },
+      forbidden: {
+        badge: "Error 403 • Access Denied",
+        title: "Access Restricted",
+        subtitle: "You don't have authorization or credentials to access this protected area.",
+        hint: "If you believe this is a mistake, please reach out to our team."
+      },
+      serviceUnavailable: {
+        badge: "Error 503 • Service Maintenance",
+        title: "Under Scheduled Maintenance",
+        subtitle: "We're currently performing system updates to enhance your experience. We will be back online shortly.",
+        hint: "Our WhatsApp and contact channels remain fully active."
+      }
     }
   },
   pt: {
@@ -453,6 +501,54 @@ const translations = {
       successStories: "Histórias de Sucesso",
       whatOurStudentsSay: "O Que Dizem os Nossos ",
       studentsSay: "Estudantes"
+    },
+    errors: {
+      common: {
+        goHome: "Voltar à Página Inicial",
+        goBack: "Voltar Atrás",
+        contactSupport: "Falar com o Suporte",
+        whatsappSupport: "Conversar no WhatsApp",
+        needHelp: "Precisa de apoio imediato sobre vistos ou estudos?",
+        helpfulLinks: "Acesso rápido às nossas plataformas",
+        homeTitle: "One Link Holding",
+        homeDesc: "Visão geral, liderança e marcas do grupo",
+        travelTitle: "One Link Travel",
+        travelDesc: "Consultoria de vistos de trabalho, turismo e estudante",
+        cbestTitle: "Agência CBEST",
+        cbestDesc: "Admissões universitárias e bolsas de estudo internacionais",
+        faqsTitle: "Ajuda & FAQs",
+        faqsDesc: "Respostas às perguntas frequentes"
+      },
+      notFound: {
+        badge: "Erro 404 • Página Não Encontrada",
+        title: "Perdeu-se na Viagem?",
+        subtitle: "A página que procura não existe, foi movida ou o endereço introduzido está incorreto.",
+        hint: "Verifique o endereço ou explore os nossos serviços abaixo."
+      },
+      serverError: {
+        badge: "Erro 500 • Erro Interno do Servidor",
+        title: "Algo Correu Mal",
+        subtitle: "Ocorreu uma falha inesperada ao processar o seu pedido. A nossa equipa técnica já foi informada.",
+        reload: "Recarregar Página",
+        tryAgain: "Tentar Novamente",
+        detailsTitle: "Diagnóstico Técnico",
+        detailsSubtitle: "Partilhe estes detalhes caso contacte o nosso suporte:",
+        copyError: "Copiar Erro",
+        copied: "Copiado!",
+        noDetails: "Nenhum detalhe adicional de erro disponível."
+      },
+      forbidden: {
+        badge: "Erro 403 • Acesso Proibido",
+        title: "Acesso Restrito",
+        subtitle: "Não tem permissão ou credenciais para visualizar esta área protegida.",
+        hint: "Se acredita que isto é um engano, contacte a nossa equipa."
+      },
+      serviceUnavailable: {
+        badge: "Erro 503 • Manutenção Programada",
+        title: "Sistema em Manutenção",
+        subtitle: "Estamos a efetuar atualizações nos nossos serviços para lhe proporcionar uma melhor experiência. Voltaremos em breve.",
+        hint: "Os nossos canais de WhatsApp e atendimento direto continuam operacionais."
+      }
     }
   }
 };
